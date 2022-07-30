@@ -132,15 +132,16 @@ body {
   color: var(--accent-color-link);
 }
 .current::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   display: block;
   content: '';
   width: 100%;
   height: 4px;
-  position: absolute;
-  bottom: 0;
-
-  background: #2196f3;
+  background: var(--accent-color-link);
   border-radius: 2px;
+  margin-bottom: -1px;
 }
 .contacts {
   display: flex;
@@ -351,7 +352,7 @@ body {
   height: 100%;
   border-radius: 50%;
   background-color: var(--primary-background-color);
-  color: #afb1b8;
+  color: var(--color-link-icon);
 
   transition: color var(--transition-duration-function),
     background-color var(--transition-duration-function);
@@ -365,10 +366,7 @@ body {
 .social-list-icon {
   fill: currentColor;
 }
-/* .social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon{
-  fill: #ffffff;
-} */
+
 /* clients */
 .clients {
   display: flex;
@@ -491,7 +489,7 @@ body {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
-  
+
   transform: scale(0);
 }
 .modal {
