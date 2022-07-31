@@ -284,9 +284,10 @@ body {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
-
+  height: 70px;
+ display: flex;
+justify-content: center;
+align-items: center;
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   font-size: 14px;
